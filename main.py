@@ -4,8 +4,8 @@ starting_letter_file = "./input/letters/starting_letter.txt"  # Assign filepath 
 storage_folder = "./output/ReadyToSend"   # Assign filepath to ReadyToSend folder to a variable
 
 
-with open(invited_names_file, "r") as file: # Open invited_names_file
-    invited_names_list = file.readlines()   # Convert content in invited_names_file to a list of strings
+with open(invited_names_file, "r") as names_file: # Open invited_names_file
+    invited_names_list = names_file.readlines()   # Convert content in invited_names_file to a list of strings
 
     with open(starting_letter_file, "r") as file:   # Open starting_letter file
         starting_letter = file.read()
