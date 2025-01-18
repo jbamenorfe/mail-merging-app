@@ -1,20 +1,7 @@
-#TODO: Create a letter using starting_letter.txt 
-#for each name in invited_names.txt
-#Replace the [name] placeholder with the actual name.
-#Save the letters in the folder "ReadyToSend".
-from importlib.resources import contents
-
-#Hint1: This method will help you: https://www.w3schools.com/python/ref_file_readlines.asp
-    #Hint2: This method will also help you: https://www.w3schools.com/python/ref_string_replace.asp
-        #Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
-
-# My Solution
-# (1)   assign the name of the file (invited_names.txt) to a variable called invited_names_list. Use the method readline()
-
-import string
-invited_names_file = "input/names/invited_names.txt"    # Assign filepath to invited_names.txt to a variable
-starting_letter_file = "input/letters/starting_letter.txt"  # Assign filepath to starting_letter.txt to a rariable
-storage_folder = "output/ReadyToSend"   # Assign filepath to ReadyToSend folder to a variable
+"""This program sends a similar email to a list of recipients. It replaces a placeholder with in the salutation - [name] with each recipient's name. By JBAmenorfe on 17/01/2025"""
+invited_names_file = "./input/names/invited_names.txt"    # Assign filepath to invited_names.txt to a variable
+starting_letter_file = "./input/letters/starting_letter.txt"  # Assign filepath to starting_letter.txt to a rariable
+storage_folder = "./output/ReadyToSend"   # Assign filepath to ReadyToSend folder to a variable
 
 
 with open(invited_names_file, "r") as file: # Open invited_names_file
